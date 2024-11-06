@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trinity - Data Center Site Selection</title>
+    <title>Trinity - AI-Powered Data Center Solutions</title>
     <style>
-        /* Reset and Basic Styling */
+        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
@@ -14,21 +14,16 @@
         body {
             font-family: Arial, sans-serif;
             color: #333;
-            line-height: 1.6;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
         }
 
-        /* Navbar Styling */
+        /* Navbar */
         .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            background-color: #333;
-            color: #fff;
         }
         .navbar .logo {
             font-size: 1.5rem;
@@ -37,33 +32,37 @@
         .navbar nav a {
             color: #fff;
             margin-left: 1.5rem;
+            text-decoration: none;
         }
 
         /* Hero Section */
         .hero {
             height: 80vh;
+            background-image: url('hero-background.jpg'); /* Placeholder for hero image */
+            background-size: cover;
+            background-position: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #fff;
             text-align: center;
-            background-color: #f4f4f4;
-            padding: 0 2rem;
+            padding: 2rem;
         }
         .hero h1 {
             font-size: 3rem;
-            color: #333;
             font-weight: bold;
             margin-bottom: 1rem;
         }
         .hero p {
             font-size: 1.2rem;
-            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
         }
         .hero button {
             margin-top: 2rem;
             padding: 0.8rem 1.5rem;
             font-size: 1rem;
-            background-color: #333;
+            background-color: #e63946;
             color: #fff;
             border: none;
             cursor: pointer;
@@ -73,7 +72,7 @@
         /* About Section */
         .about {
             padding: 4rem 2rem;
-            background-color: #fff;
+            background-color: #f8f9fa;
             text-align: center;
         }
         .about h2 {
@@ -89,12 +88,12 @@
         /* Features Section */
         .features {
             padding: 4rem 2rem;
-            background-color: #f9f9f9;
+            background-color: #fff;
             text-align: center;
         }
         .features h2 {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
         .feature-cards {
             display: flex;
@@ -104,18 +103,64 @@
         }
         .feature-card {
             flex: 1 1 300px;
-            background-color: #fff;
-            padding: 1.5rem;
+            padding: 2rem;
+            background-color: #f1f1f1;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
         .feature-card h3 {
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             font-size: 1.5rem;
             color: #333;
         }
         .feature-card p {
+            color: #555;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 4rem 2rem;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .map-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .map {
+            width: 100%;
+            height: 400px;
+            background-image: url('usa-map.png'); /* Placeholder for map image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        /* Sustainability Section */
+        .sustainability {
+            padding: 4rem 2rem;
+            background-color: #e1e1e1;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+        .sustainability img {
+            flex: 1 1 40%;
+            max-width: 400px;
+            margin-right: 2rem;
+            border-radius: 8px;
+        }
+        .sustainability .content {
+            flex: 1 1 50%;
+            max-width: 600px;
+        }
+        .sustainability h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .sustainability p {
             color: #555;
         }
 
@@ -135,19 +180,14 @@
             margin: 0 auto 2rem;
             color: #ddd;
         }
-        .contact form input,
-        .contact form textarea,
-        .contact form button {
-            width: 100%;
-            padding: 0.8rem;
-            margin: 0.5rem 0;
-            border: none;
-            border-radius: 5px;
-        }
-        .contact form button {
-            background-color: #444;
+        .contact button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            background-color: #e63946;
             color: #fff;
+            border: none;
             cursor: pointer;
+            border-radius: 5px;
         }
 
         /* Footer */
@@ -163,6 +203,13 @@
             .feature-cards {
                 flex-direction: column;
             }
+            .sustainability {
+                flex-direction: column;
+                text-align: center;
+            }
+            .sustainability img {
+                margin-bottom: 2rem;
+            }
         }
     </style>
 </head>
@@ -173,6 +220,8 @@
         <nav>
             <a href="#about">About</a>
             <a href="#features">Features</a>
+            <a href="#map">Map</a>
+            <a href="#sustainability">Sustainability</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -180,16 +229,16 @@
     <!-- Hero Section -->
     <section class="hero">
         <div>
-            <h1>Welcome to Trinity</h1>
-            <p>Data Center Site Selection Simplified</p>
-            <button>Get Started</button>
+            <h1>Next Generation Data Center Solutions</h1>
+            <p>Sustainable, innovative, and engineered to stand the test of time.</p>
+            <button>Learn More</button>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Trinity is your one-stop solution for data center site selection, providing insights into optimal locations based on power infrastructure, network connectivity, cooling options, and real estate data.</p>
+        <h2>About Trinity</h2>
+        <p>Trinity is an AI-powered platform for selecting optimal data center locations, combining geospatial insights, sustainability, and cutting-edge technology to meet the demands of tomorrow.</p>
     </section>
 
     <!-- Features Section -->
@@ -197,30 +246,41 @@
         <h2>Key Features</h2>
         <div class="feature-cards">
             <div class="feature-card">
-                <h3>Power Infrastructure</h3>
-                <p>Get insights on proximity to power sources for cost-effective energy solutions.</p>
+                <h3>Geospatial AI Insights</h3>
+                <p>Identify optimal locations based on advanced geospatial analysis and AI-driven predictions.</p>
             </div>
             <div class="feature-card">
-                <h3>Fiber Optic Networks</h3>
-                <p>Ensure high-speed connectivity by selecting sites near major fiber networks.</p>
+                <h3>Power & Connectivity</h3>
+                <p>Evaluate proximity to essential power and network infrastructure.</p>
             </div>
             <div class="feature-card">
-                <h3>Cooling Resources</h3>
-                <p>Access locations with natural cooling options, ideal for reducing operational costs.</p>
+                <h3>Sustainable Solutions</h3>
+                <p>Focus on locations that support eco-friendly cooling and energy options.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map-section">
+        <h2>Our Coverage</h2>
+        <div class="map"></div>
+        <p>Explore our U.S. coverage with AI-powered insights for optimal data center locations.</p>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="sustainability">
+        <img src="sustainability-image.jpg" alt="Sustainability Image"> <!-- Placeholder image -->
+        <div class="content">
+            <h2>Sustainability at Our Core</h2>
+            <p>We are committed to environmental stewardship, utilizing green technology, and minimizing our footprint by leveraging natural resources for data cooling and powering facilities.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>Have questions? Feel free to reach out to us for more information on how Trinity can support your data center needs.</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <p>Reach out to learn more about our data centers and partnership opportunities.</p>
+        <button>Contact Us</button>
     </section>
 
     <!-- Footer -->
