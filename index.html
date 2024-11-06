@@ -3,48 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trinity</title>
+    <title>Trinity - Data Center Site Selection</title>
     <style>
-        /* Resetting margin and padding */
+        /* Reset and Basic Styling */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        /* Full-page styling */
         body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar nav a {
+            color: #fff;
+            margin-left: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4; /* Light grey background for a classic feel */
-            font-family: Arial, sans-serif; /* Clean, classic font */
-            color: #333; /* Dark grey text for good contrast */
-        }
-
-        /* Logo styling */
-        .logo {
-            font-size: 5rem; /* Large text size */
-            font-weight: bold;
-            color: #000; /* Black color for a classic look */
-            text-transform: uppercase; /* Makes the text all uppercase */
-            letter-spacing: 0.1em; /* Adds slight spacing between letters */
-        }
-
-        /* Subheading style (optional) */
-        .tagline {
-            font-size: 1.2rem;
-            color: #555; /* Slightly lighter color for the tagline */
-            margin-top: 1rem;
             text-align: center;
+            background-color: #f4f4f4;
+            padding: 0 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .hero button {
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .about p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 2rem;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .feature-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .feature-card {
+            flex: 1 1 300px;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .feature-card p {
+            color: #555;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 2rem;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .contact p {
+            max-width: 500px;
+            margin: 0 auto 2rem;
+            color: #ddd;
+        }
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact form button {
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 1rem;
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .feature-cards {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="content">
+    <!-- Navbar -->
+    <header class="navbar">
         <div class="logo">Trinity</div>
-        <div class="tagline">Data Center Site Selection Simplified</div> <!-- Optional tagline below the logo -->
-    </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to Trinity</h1>
+            <p>Data Center Site Selection Simplified</p>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Trinity is your one-stop solution for data center site selection, providing insights into optimal locations based on power infrastructure, network connectivity, cooling options, and real estate data.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Power Infrastructure</h3>
+                <p>Get insights on proximity to power sources for cost-effective energy solutions.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fiber Optic Networks</h3>
+                <p>Ensure high-speed connectivity by selecting sites near major fiber networks.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Cooling Resources</h3>
+                <p>Access locations with natural cooling options, ideal for reducing operational costs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to reach out to us for more information on how Trinity can support your data center needs.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Trinity. All rights reserved.</p>
+    </footer>
 </body>
 </html>
