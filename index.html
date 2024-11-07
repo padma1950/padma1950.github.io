@@ -14,6 +14,7 @@
         body {
             font-family: Arial, sans-serif;
             color: #333;
+            scroll-behavior: smooth; /* Smooth scroll effect */
         }
 
         /* Navbar */
@@ -131,6 +132,13 @@
             color: #bbb;
             text-align: center;
         }
+        .footer a {
+            color: #bbb;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -139,7 +147,7 @@
         <div class="logo">Trinity</div>
         <nav>
             <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact</a> <!-- Link to footer with ID contact -->
         </nav>
     </header>
 
@@ -152,11 +160,20 @@
         <a href="#about" class="scroll-down">▼ Scroll Down</a> <!-- Scroll down link -->
     </section>
 
-    <!-- What We Do Section -->
+    <!-- About Us Section -->
     <section id="about" class="content-section">
         <div class="text">
+            <h2>About Us</h2>
+            <p>At Trinity, we believe in the power of data to <strong>transform industries</strong>. Our mission is to <strong>bridge the gap</strong> between <strong>technology</strong> and <strong>site selection</strong>, making it <strong>easier</strong>, <strong>faster</strong>, and <strong>more affordable</strong> for companies to find the <strong>perfect locations</strong> for their data centers. With a vision to <strong>streamline infrastructure development</strong> worldwide, we combine <strong>cutting-edge AI</strong> with expert insights to create a platform that drives progress. Discover our story and see why we’re dedicated to making <strong>data center site selection smarter</strong> for everyone.</p>
+        </div>
+        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/pexels-martin-melichar-883344775-23533813.jpg?raw=true" alt="About Us Image"> <!-- Replace with actual image URL -->
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="content-section">
+        <div class="text">
             <h2>What We Do</h2>
-            <p>Trinity leverages geospatial mapping and AI-driven models to streamline the data center site selection process. Our platform enables clients to locate optimal sites <strong>quickly</strong> and <strong>efficiently</strong>, combining crucial factors such as proximity to power sources (like <strong>electric grids</strong>, <strong>renewable energy sources</strong>, <strong>nuclear power</strong>, <strong>natural gas</strong>, <strong>microgrids</strong>, and <strong>battery storage solutions</strong>), <strong>fiber optic networks</strong>, and <strong>zoning regulations</strong>, all on a single map interface. By integrating these elements, Trinity provides a comprehensive solution that <strong>saves time</strong> and <strong>resources</strong>, allowing clients to make <strong>informed, data-driven decisions</strong> with ease.</p>
+            <p>Trinity leverages <strong>geospatial mapping</strong> and <strong>AI-driven models</strong> to <strong>streamline</strong> the <strong>data center site selection process</strong>. Our platform enables clients to <strong>locate optimal sites</strong> <strong>quickly</strong> and <strong>efficiently</strong>, combining crucial factors such as proximity to power sources (like <strong>electric grids</strong>, <strong>renewable energy sources</strong>, <strong>nuclear power</strong>, <strong>natural gas</strong>, <strong>microgrids</strong>, and <strong>battery storage solutions</strong>), <strong>fiber optic networks</strong>, and <strong>zoning regulations</strong>, all on a single map interface. By integrating these elements, Trinity provides a <strong>comprehensive solution</strong> that <strong>saves time</strong> and <strong>resources</strong>, allowing clients to make <strong>informed, data-driven decisions</strong> with ease.</p>
         </div>
         <img src="https://github.com/padma1950/padma1950.github.io/blob/main/pexels-pixabay-459728.jpg?raw=true" alt="Geospatial Map"> <!-- Replace with actual image URL -->
     </section>
@@ -178,8 +195,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <p>&copy; 2024 Trinity. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:contact@trinity.com">contact@trinity.com</a> for any inquiries or potential collaborations or partnerships.</p>
     </footer>
 </body>
 </html>
