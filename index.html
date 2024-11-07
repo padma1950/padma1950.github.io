@@ -42,8 +42,8 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh; /* Full viewport height */
-            background-image: url('https://github.com/padma1950/padma1950.github.io/blob/main/pexels-laura-penwell-309923-3608056.jpg?raw=true'); /* Replace with actual image URL */
+            height: 100vh;
+            background-image: url('https://github.com/padma1950/padma1950.github.io/blob/main/pexels-laura-penwell-309923-3608056.jpg?raw=true');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -58,13 +58,13 @@
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
         .hero p {
             font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Adds shadow to the text */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
         }
         .scroll-down {
             position: absolute;
@@ -101,6 +101,13 @@
             width: 50%;
             border-radius: 8px;
         }
+        /* Alternating sections for zig-zag effect */
+        .content-section:nth-child(even) {
+            flex-direction: row-reverse;
+            background-color: #ffffff;
+        }
+        
+        /* Coverage Section */
         .coverage-section {
             padding: 4rem 2rem;
             background-color: #fff;
@@ -113,7 +120,7 @@
         .coverage-section .map {
             width: 100%;
             height: 400px;
-            background-image: url('https://github.com/padma1950/padma1950.github.io/blob/main/flag-1294654_1920.png?raw=true'); /* Replace with actual map image URL */
+            background-image: url('https://github.com/padma1950.github.io/blob/main/flag-1294654_1920.png?raw=true');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -147,7 +154,7 @@
         <div class="logo">Trinity</div>
         <nav>
             <a href="#about">About</a>
-            <a href="#contact">Contact</a> <!-- Link to footer with ID contact -->
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -157,7 +164,7 @@
             <h1>We Bring Data Centers to the Power Source – Not the Latter</h1>
             <p>One-stop platform for selecting the best optimal site for building a data center powered by AI.</p>
         </div>
-        <a href="#about" class="scroll-down">▼ Scroll Down</a> <!-- Scroll down link -->
+        <a href="#about" class="scroll-down">▼ Scroll Down</a>
     </section>
 
     <!-- About Us Section -->
@@ -166,25 +173,25 @@
             <h2>About Us</h2>
             <p>At Trinity, we believe in the power of data to <strong>transform industries</strong>. Our mission is to <strong>bridge the gap</strong> between <strong>technology</strong> and <strong>site selection</strong>, making it <strong>easier</strong>, <strong>faster</strong>, and <strong>more affordable</strong> for companies to find the <strong>perfect locations</strong> for their data centers. With a vision to <strong>streamline infrastructure development</strong> worldwide, we combine <strong>cutting-edge AI</strong> with expert insights to create a platform that drives progress. Discover our story and see why we’re dedicated to making <strong>data center site selection smarter</strong> for everyone.</p>
         </div>
-        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/pexels-martin-melichar-883344775-23533813.jpg?raw=true" alt="About Us Image"> <!-- Replace with actual image URL -->
+        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/pexels-martin-melichar-883344775-23533813.jpg?raw=true" alt="About Us Image">
     </section>
 
     <!-- What We Do Section -->
     <section class="content-section">
+        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/pexels-pixabay-459728.jpg?raw=true" alt="Geospatial Map">
         <div class="text">
             <h2>What We Do</h2>
             <p>Trinity leverages <strong>geospatial mapping</strong> and <strong>AI-driven models</strong> to <strong>streamline</strong> the <strong>data center site selection process</strong>. Our platform enables clients to <strong>locate optimal sites</strong> <strong>quickly</strong> and <strong>efficiently</strong>, combining crucial factors such as proximity to power sources (like <strong>electric grids</strong>, <strong>renewable energy sources</strong>, <strong>nuclear power</strong>, <strong>natural gas</strong>, <strong>microgrids</strong>, and <strong>battery storage solutions</strong>), <strong>fiber optic networks</strong>, and <strong>zoning regulations</strong>, all on a single map interface. By integrating these elements, Trinity provides a <strong>comprehensive solution</strong> that <strong>saves time</strong> and <strong>resources</strong>, allowing clients to make <strong>informed, data-driven decisions</strong> with ease.</p>
         </div>
-        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/pexels-pixabay-459728.jpg?raw=true" alt="Geospatial Map"> <!-- Replace with actual image URL -->
     </section>
 
     <!-- What We Provide Section -->
-    <section class="content-section" style="flex-direction: row-reverse;">
+    <section class="content-section">
         <div class="text">
             <h2>What We Provide</h2>
             <p>Trinity provides a <strong>powerful, AI-driven solution</strong> tailored to <strong>simplify</strong> and <strong>enhance</strong> the <strong>site selection process</strong> for data centers. Our platform offers essential tools, including <strong>real-time data analysis</strong>, <strong>geospatial mapping</strong>, <strong>AI-powered predictions</strong>, and <strong>intuitive filters</strong>, enabling you to <strong>locate optimal sites</strong> <strong>faster</strong>, <strong>smarter</strong>, and <strong>more cost-effectively</strong>. With every critical factor considered – from <strong>proximity to power sources</strong> and <strong>connectivity</strong> to <strong>zoning</strong> and <strong>climate</strong> – Trinity equips you to make <strong>data-driven decisions</strong> confidently. Experience a <strong>seamless approach</strong> to <strong>site selection</strong> that <strong>saves time</strong> and <strong>maximizes value</strong>.</p>
-       </div>
-        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/6c0a7aa5-39b3-48c7-82f6-31da3b934626.jpg?raw=true" alt="AI Model Selection"> <!-- Replace with actual image URL -->
+        </div>
+        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/6c0a7aa5-39b3-48c7-82f6-31da3b934626.jpg?raw=true" alt="AI Model Selection">
     </section>
 
     <!-- Our Coverage Section -->
@@ -196,7 +203,7 @@
 
     <!-- Footer -->
     <footer class="footer" id="contact">
-        <p>&copy; 2024 Trinity. All rights reserved.</p>
+        <p>&copy; © 2024 Trinity. Proudly building the future of data center site selection.</p>
         <p>Contact us at <a href="mailto:contact@trinity.com">contact@trinity.com</a> for any inquiries or potential collaborations or partnerships.</p>
     </footer>
 </body>
