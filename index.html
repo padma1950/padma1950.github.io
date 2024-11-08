@@ -106,7 +106,7 @@
             margin-bottom: 1rem;
             color: #333;
         }
-        .content-section p, .content-section ul li {
+        .content-section p {
             color: #666;
         }
         .content-section ul {
@@ -167,38 +167,16 @@
 
         /* Media Queries */
         @media (max-width: 768px) {
-            /* Stack the navbar links vertically */
-            .navbar {
-                flex-direction: column;
-                text-align: center;
-                padding: 1rem;
-            }
-            .navbar nav a {
-                display: block;
-                margin: 0.5rem 0;
-            }
-
-            /* Stack content sections vertically */
             .content-section {
                 flex-direction: column;
                 text-align: center;
             }
-            .content-section .text, .content-section img {
-                width: 100%;
-                padding: 1rem;
+            .content-section img {
+                width: 80%;
+                margin-top: 1.5rem;
             }
-
-            /* Reduce hero font sizes */
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-
-            /* Adjust footer layout */
-            .footer p {
-                font-size: 0.9rem;
+            .navbar nav a {
+                margin-left: 1rem;
             }
         }
 
@@ -236,9 +214,10 @@
     <section class="content-section">
         <div class="text">
             <h2>Why Trinity?</h2>
-            <p>Selecting the right location for data centers is traditionally a <strong>costly</strong> and <strong>time-consuming</strong> process...</p>
+            <p>Selecting the right location for data centers is traditionally a <strong>costly</strong> and <strong>time-consuming</strong> process that relies on <strong>fragmented data</strong> and multiple consultancies. Trinity changes the game by bringing together all essential site selection factors—<strong>power infrastructure</strong>, <strong>fiber optics</strong>, <strong>cooling resources</strong>, <strong>zoning data</strong>, and <strong>real-time pricing</strong>—into a unified, <strong>AI-powered platform</strong>.</p>
+            <p>With Trinity, developers gain a <strong>streamlined</strong>, <strong>data-driven approach</strong> that drastically reduces site selection <strong>timelines</strong> and <strong>costs</strong>, all while increasing decision <strong>accuracy</strong>. Our <strong>predictive insights</strong> and <strong>integrated data</strong> empower users to identify <strong>optimal locations</strong> with confidence, saving both <strong>resources</strong> and <strong>time</strong>. Trinity is the next-generation solution that <strong>redefines</strong> how companies approach data center expansion, delivering a <strong>comprehensive tool</strong> for <strong>strategic</strong>, <strong>informed</strong>, and <strong>future-focused</strong> site selection.</p>
         </div>
-        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/compass-2946959_1920.jpg?raw=true" alt="Why Trinity Image">
+        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/compass-2946959_1920.jpg?raw=true" alt="Why Trinity Image"> <!-- Replace with your actual image URL -->
     </section>
 
     <!-- What We Provide Section -->
@@ -246,25 +225,49 @@
         <div class="text">
             <h2>What We Provide</h2>
             <ul>
-                <li><strong>AI-Powered Site Recommendations:</strong> Advanced analytics identify ideal sites...</li>
+                <li><strong>AI-Powered Site Recommendations:</strong> Advanced analytics identify ideal sites with high growth and infrastructure potential tailored to your needs.</li>
+                <li><strong>Real-Time Market Data:</strong> Access the latest information on land pricing, zoning, infrastructure, and labor markets for strategic decision-making.</li>
+                <li><strong>Power Source Capacity Insights:</strong> Evaluate power availability and types, including nuclear, hydro, gas, and electric, to ensure compatibility with operational demands and sustainability goals.</li>
+                <li><strong>Geospatial Visualization:</strong> Interactive mapping tools provide a clear view of site viability, including proximity to essential resources like power, fiber optics, and skilled labor pools.</li>
+                <li><strong>Predictive Analytics:</strong> Identify high-potential “hotspot” areas backed by robust infrastructure, power capacity, and labor market support for future-focused planning.</li>
             </ul>
         </div>
         <img src="https://github.com/padma1950/padma1950.github.io/blob/main/6c0a7aa5-39b3-48c7-82f6-31da3b934626.jpg?raw=true" alt="AI Model Selection">
+    </section>
+
+    <!-- Who Needs Trinity Section -->
+    <section class="content-section" style="flex-direction: row-reverse;">
+        <div class="text">
+            <h2>Who Needs Trinity</h2>
+            <ul>
+                <li><strong>Data Center Developers & Hyperscalers:</strong> Accelerate site selection with insights into power sources, infrastructure, and labor availability to support efficient scaling.</li>
+                <li><strong>Real Estate Developers:</strong> Identify high-value, infrastructure-rich sites with comprehensive data on power, labor, and market conditions for strategic investment.</li>
+                <li><strong>Investment Firms & Real Estate Holdings:</strong> Maximize returns by targeting locations with strong power capacity, high demand, and growth potential.</li>
+            </ul>
+        </div>
+        <img src="https://github.com/padma1950/padma1950.github.io/blob/main/pexels-pixabay-302769.jpg?raw=true" alt="Investment Firms and Real Estate">
     </section>
 
     <!-- About Us Section -->
     <section id="about" class="content-section">
         <div class="text">
             <h2>About Us</h2>
-            <p>At Trinity, we believe in the power of data to <strong>transform industries</strong>...</p>
+            <p>At Trinity, we believe in the power of data to <strong>transform industries</strong>. Our mission is to <strong>bridge the gap</strong> between <strong>technology</strong> and <strong>site selection</strong>, making it <strong>easier</strong>, <strong>faster</strong>, and <strong>more affordable</strong> for companies to find the <strong>perfect locations</strong> for their data centers. With a vision to <strong>streamline infrastructure development</strong> worldwide, we combine <strong>cutting-edge AI</strong> with expert insights to create a platform that drives progress. Discover our story and see why we’re dedicated to making <strong>data center site selection smarter</strong> for everyone.</p>
         </div>
         <img src="https://github.com/padma1950/padma1950.github.io/blob/main/pexels-martin-melichar-883344775-23533813.jpg?raw=true" alt="About Us Image">
+    </section>
+
+    <!-- Our Coverage Section -->
+    <section class="coverage-section">
+        <h2>Our Coverage</h2>
+        <div class="map"></div>
+        <p>Our platform provides comprehensive data center site selection coverage across the USA, with tools designed to reduce selection time and costs significantly. Trinity’s intelligent mapping and analytics simplify the site selection process, supporting high-quality data center infrastructure development nationwide.</p>
     </section>
 
     <!-- Footer -->
     <footer class="footer" id="contact">
         <p>&copy; 2024 Trinity. All rights reserved.</p>
-        <p>Contact us at <strong><a href="mailto:contact@thetrinityportal.com">contact@thetrinityportal.com</a></strong> for any inquiries.</p>
+        <p>Contact us at <strong><a href="mailto:contact@thetrinityportal.com">contact@thetrinityportal.com</a></strong> for any inquiries or potential collaborations or partnerships.</p>
     </footer>
 </body>
 </html>
